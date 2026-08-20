@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	*fttrdup(const char *s)
+char	*ft_rdup(const char *s)
 {
 	int		len;
 	char	*str;
