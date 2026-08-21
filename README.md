@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:0a0a0a,100:111111&height=200&section=header&text=libft.a&fontSize=90&fontFamily=JetBrains%20Mono&fontColor=ffffff" />
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,50:0a0a0a,100:111111&height=200&section=header&text=libft&fontSize=90&fontFamily=JetBrains%20Mono&fontColor=ffffff" />
 
 [![typing](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=16&duration=3000&pause=800&color=1D9E75&center=true&vCenter=true&multiline=false&width=580&lines=A+custom+C+library;reimplementing+essential+libc+functions;for+42+School+Curriculum)](https://github.com/sboukhel)
 
