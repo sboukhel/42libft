@@ -6,7 +6,7 @@
 /*   By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 22:00:14 by sboukhel          #+#    #+#             */
-/*   Updated: 2026/08/31 22:08:44 by sboukhel         ###   ########.fr       */
+/*   Updated: 2026/09/03 19:45:29 by sboukhel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_putnbr_fd(int n, int fd)
 		n = -n;
 	}
 	if (n > 9)
-		ft_putnbr_fd(n / 10);
+		ft_putnbr_fd(n / 10, fd);
 	c = (n % 10) + 48;
 	write(fd, &c, 1);
 }

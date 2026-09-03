@@ -6,13 +6,14 @@
 /*   By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 10:18:28 by sboukhel          #+#    #+#             */
-/*   Updated: 2026/08/20 11:06:33 by sboukhel         ###   ########.fr       */
+/*   Updated: 2026/09/03 19:36:33 by sboukhel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include "libft.h"
 
-void	*calloc(size_t num, size_t size)
+void	*ft_calloc(size_t num, size_t size)
 {
 	void	*ptr;
 

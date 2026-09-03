@@ -6,7 +6,7 @@
 /*   By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 19:43:28 by sboukhel          #+#    #+#             */
-/*   Updated: 2026/08/31 19:49:42 by sboukhel         ###   ########.fr       */
+/*   Updated: 2026/09/03 19:43:28 by sboukhel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	i = 0;
 	while (s[i])
 	{
-		f(i, s[i]);
+		f(i, &s[i]);
 		i++;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/21 11:09:56 by sboukhel          #+#    #+#             */
-/*   Updated: 2026/08/27 10:39:21 by sboukhel         ###   ########.fr       */
+/*   Updated: 2026/09/03 19:41:25 by sboukhel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	**full_world(char **result, const char *s, char c)
 		result[j] = malloc(sizeof(char) * (i - start + 1));
 		if (!result[j])
 		{
-			free_spilt(result);
+			free_split(result);
 			return (NULL);
 		}
 		ft_strlcpy(result[j], s + start, i - start + 1);
