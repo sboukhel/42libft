@@ -6,12 +6,12 @@
 #    By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/08/20 15:07:40 by sboukhel          #+#    #+#              #
-#    Updated: 2026/09/04 23:19:12 by sboukhel         ###   ########.fr        #
+#    Updated: 2026/09/04 23:46:19 by sboukhel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-
+NAME_BONUS = libft.a
 SRCS = ft_atoi.c \
 		ft_isalpha.c \
 		ft_memchr.c \
@@ -36,15 +36,15 @@ SRCS = ft_atoi.c \
 		ft_strlcat.c \
 		ft_strnstr.c \
 		ft_toupper.c
-BONUS = ft_lstnew.c \
-		ft_lstadd_front.c \
-		ft_lstsize.c \
-		ft_lstlast.c \
-		ft_lstadd_back.c \
-		ft_lstdelone.c \
-		ft_lstclear.c \
-		ft_lstiter.c \
-		ft_lstmap.c
+BONUS = ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+		ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstmap_bonus.c
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJS =$(BONUS:.c=.o)
 
@@ -53,6 +53,8 @@ AR = ar rcs
 FLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
+bonus : $(OBJS) $(BONUS_OBJS)
+	$(AR) $(NAME) $(BONUS_OBJS)
 
 $(NAME) : $(OBJS)
 	$(AR) $(NAME) $(OBJS)
