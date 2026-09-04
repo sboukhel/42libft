@@ -6,7 +6,7 @@
 /*   By: sboukhel <sboukhel@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 07:37:51 by sboukhel          #+#    #+#             */
-/*   Updated: 2026/09/02 07:59:09 by sboukhel         ###   ########.fr       */
+/*   Updated: 2026/09/04 22:42:23 by sboukhel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list last;
+	t_list	*last;
 
 	if (!new || !lst)
 		return ;
