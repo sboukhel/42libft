@@ -29,14 +29,21 @@ int	ft_atoi(const char *nptr)
 		i++;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
+<<<<<<< HEAD
 		if (res > (9223372036854775807 - (nptr[i] - '0')) / 10)
 		{
 			if (sign == 1)
 				return (-1);
 			return (0);
 		}
+=======
+>>>>>>> 82af0e695a16dd19f7fd929488561ec264f5b73b
 		res = res * 10 + nptr[i] - '0';
 		i++;
 	}
+	if (res > 9223372036854775807 && sign == 1)
+		return (-1);
+	if (res > 9223372036854775807 && sign == -1)
+		return (0);
 	return (res * sign);
 }
