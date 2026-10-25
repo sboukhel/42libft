@@ -76,15 +76,15 @@ This project serves as a foundation for all subsequent 42 projects, providing a 
 
 ### Clone the repository
 ```bash
-git clone https://github.com/sboukhel/libft.a.git
-cd libft.a
+git clone https://github.com/sboukhel/42libft.git
+cd 42libft
 ```
 
 ### Build the library
 ```bash
 make
 ```
-This compiles all the source files and generates the static library `libft.a` in the project root.
+This compiles all the source files and generates the static library `42libft` in the project root.
 
 ### Build with bonus (linked list functions)
 ```bash
@@ -99,7 +99,7 @@ make re           # fclean + full rebuild
 ```
 
 ### Use it in your own project
-1. Copy `libft.a` and `libft.h` into your project, or add this repo as a subdirectory/submodule.
+1. Copy `42libft` and `libft.h` into your project, or add this repo as a subdirectory/submodule.
 2. Include the header in your source files:
    ```c
    #include "libft.h"
